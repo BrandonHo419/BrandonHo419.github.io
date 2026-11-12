@@ -1,0 +1,3 @@
+# Keep source tests available for commits; ignore only Python bytecode.
+__pycache__/
+*.py[cod]

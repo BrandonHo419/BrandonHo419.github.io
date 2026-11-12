@@ -1,0 +1,119 @@
+{
+  "savvit": {
+    "name": "Savvit",
+    "title_lines": [
+      "Savvit"
+    ],
+    "subtitle": "/ Visual bookmarking",
+    "summary": "I am independently extending Savvit into a visual bookmarking workspace for images, ideas and useful links. I organise content into private, public and selectively shared boards, with discovery of public boards and boards shared with my account after sign-in.",
+    "contribution_label": "My redevelopment",
+    "contribution": "I have extended pin uploads, metadata editing, search, saved references and moving owned originals between boards, alongside likes and threaded discussions. I have also added light, dark and system themes, saved appearance preferences, labelled forms and keyboard dialog focus management.",
+    "technologies": [
+      "JAVASCRIPT",
+      "EXPRESS.JS",
+      "MYSQL",
+      "PASSPORT.JS"
+    ],
+    "evidence": [
+      {
+        "label": "Source code",
+        "url": "https://github.com/BrandonHo419/Savvit-Web-Based-Development",
+        "accessible_label": "View Savvit source code on GitHub"
+      }
+    ],
+    "background": "I started from our collaborative university web application, where I worked on authentication, MySQL-backed functionality and module testing. The original team work remains credited in the repository history.",
+    "status": "Portfolio development: I have not deployed a public demo or completed end-to-end verification against real MySQL."
+  },
+  "search": {
+    "name": "Mini Search Engine",
+    "title_lines": [
+      "Mini Search",
+      "Engine"
+    ],
+    "subtitle": "",
+    "summary": "I have developed our university C++ search engine further with a WebAssembly demo that returns ranked results. I can search the sample collection or import local files without uploading their contents.",
+    "contribution_label": "My extension",
+    "contribution": "I have extended the browser experience with local file import and match snippets. The engine combines a positional index, trie-based prefix search and TF-IDF ranking, with phrase and left-to-right Boolean queries.",
+    "technologies": [
+      "C++",
+      "TRIES",
+      "TF-IDF",
+      "WEBASSEMBLY"
+    ],
+    "evidence": [
+      {
+        "label": "Source code",
+        "url": "https://github.com/BrandonHo419/ProjectSearchEngine",
+        "accessible_label": "View Mini Search Engine source code on GitHub"
+      },
+      {
+        "label": "Try demo",
+        "url": "https://brandonho419.github.io/ProjectSearchEngine/demo/",
+        "accessible_label": "Try the Mini Search Engine browser demo"
+      },
+      {
+        "label": "Project history",
+        "url": "https://github.com/BrandonHo419/ProjectSearchEngine/tree/development",
+        "accessible_label": "Read Mini Search Engine development history and original group attribution"
+      }
+    ],
+    "background": "I built the original university project with Duy Do and Zixi Khoo. My original work covered searcher prototypes, prefix search and query processing/ranking; their index, snippet, Boolean and phrase-search contributions remain part of this foundation.",
+    "status": ""
+  },
+  "farm": {
+    "name": "Grid-Based-Farming Game",
+    "title_lines": [
+      "Grid-Based-Farming Game"
+    ],
+    "subtitle": "",
+    "summary": "I rebuilt our university farming game as a C++17 idle game using raylib. I can plant crops, hire workers, buy land and improve yields in the desktop game and the playable browser demo below.",
+    "contribution_label": "My rebuild",
+    "contribution": "I rebuilt the game with deterministic production, crop automation, generated artwork and synthesised audio. On desktop, I added saves and up to eight hours of offline production: automated plots earn income while manual crops only mature.",
+    "technologies": [
+      "C++17",
+      "RAYLIB",
+      "WEBASSEMBLY",
+      "CMAKE"
+    ],
+    "evidence": [
+      {
+        "label": "Source code",
+        "url": "https://github.com/BrandonHo419/Grid-Based-Farming-Game",
+        "accessible_label": "View Grid-Based-Farming Game source code on GitHub"
+      },
+      {
+        "label": "Original group project",
+        "url": "https://github.com/BrandonHo419/GridFarmGame",
+        "accessible_label": "View the original university group farming project"
+      }
+    ],
+    "background": "Our collaborative OOP project, GridFarmGame, inspired this independent rebuild. I credit the original team and its history in the linked predecessor; I did not copy its code, sprites or audio into this version.",
+    "status": "The browser demo is session-only. Closing this player, refreshing or closing its tab resets the farm; browser saves and closed-tab earnings are not available."
+  },
+  "mergesort": {
+    "name": "Parallel Merge Sort",
+    "title_lines": [
+      "Parallel",
+      "Merge Sort"
+    ],
+    "subtitle": "/ Operating systems",
+    "summary": "I worked with Jeremy Nguyen and Marko Bogsav on a university operating systems assignment in C. We implemented sequential merge sort and a parallel version using POSIX threads.",
+    "contribution_label": "Our implementation",
+    "contribution": "We divide the array into independent ranges, join worker threads before merging and use a recursion cutoff to switch to sequential sorting. If thread creation fails, that range falls back to sequential sorting.",
+    "background": "I developed this as part of our university team, working through recursion, memory management and thread synchronisation. I retain our shared authorship and the course context in the source documentation.",
+    "status": "Our test harness checks ordering; it does not independently prove that every input element is preserved. I do not claim a measured parallel speedup.",
+    "technologies": [
+      "C",
+      "PTHREADS",
+      "LINUX",
+      "GNU MAKE"
+    ],
+    "evidence": [
+      {
+        "label": "Source and group report",
+        "url": "https://github.com/BrandonHo419/operating-systems/tree/main/comp2002-os-mergesort",
+        "accessible_label": "Read the Parallel Merge Sort source and university group report"
+      }
+    ]
+  }
+}

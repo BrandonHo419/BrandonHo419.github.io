@@ -1,0 +1,91 @@
+        <section class="project-group" id="personal-projects" aria-labelledby="personal-projects-title">
+          <div class="project-group-head">
+            <h3 id="personal-projects-title">Personal Projects</h3>
+            <p>I am taking these projects beyond their university beginnings through independent development.</p>
+          </div>
+        <article class="project project-one twelve-grid" aria-labelledby="p1-title">
+          <div class="project-index">01 <span>/ WEB</span></div>
+          <div class="project-story">
+            ${savvit_title}
+            ${savvit_summary}
+            ${savvit_contribution}
+            ${savvit_background}
+            ${savvit_status}
+            ${savvit_technologies}
+            ${savvit_evidence}
+          </div>
+          <figure class="project-art project-media">
+            <a href="assets/savvit-collections-fixture.png" target="_blank" rel="noopener noreferrer" aria-label="View the full-size Savvit collections screenshot in a new tab">
+              <img src="assets/savvit-collections-fixture.png" alt="Savvit collections with board search, sorting and two sample boards in light theme" width="1440" height="900" loading="lazy">
+            </a>
+            <figcaption>I captured the current Savvit UI with fixture data. Database persistence is not verified. Select the image for a full-size view.</figcaption>
+          </figure>
+        </article>
+
+        <article class="project project-two twelve-grid" aria-labelledby="p2-title">
+          <div class="project-index">02 <span>/ ALGORITHMS</span></div>
+          <figure class="project-art project-media">
+            <video controls playsinline preload="metadata" aria-label="Mini Search Engine demonstration" aria-describedby="search-video-caption" poster="assets/ProjectSearchEngineDemo.jpg">
+              <source src="assets/ProjectSearchEngineDemo.mp4" type="video/mp4">
+              <a href="assets/ProjectSearchEngineDemo.mp4">Download the search demonstration video</a>.
+            </video>
+            <figcaption id="search-video-caption">My silent search walkthrough. I enter queries and inspect the matching documents and ranked results. <a href="assets/ProjectSearchEngineDemo.mp4">Open the recording</a> for a larger view.</figcaption>
+          </figure>
+
+          <div class="project-story">
+            ${search_title}
+            ${search_summary}
+            ${search_contribution}
+            ${search_background}
+            ${search_status}
+            ${search_technologies}
+            ${search_evidence}
+          </div>
+        </article>
+
+        <article class="project project-three twelve-grid" aria-labelledby="p3-title">
+          <div class="project-index">03 <span>/ C++ & OOP</span></div>
+          <div class="project-story">
+            ${farm_title}
+            ${farm_summary}
+            ${farm_contribution}
+            ${farm_background}
+            ${farm_status}
+            ${farm_technologies}
+            ${farm_evidence}
+          </div>
+          <details class="farm-demo" id="grid-based-farming-game-demo">
+            <summary>
+              <span>Play Grid-Based-Farming Game <small class="farm-demo-label">Open to start the browser demo</small></span>
+              <img src="assets/grid-based-farming-game-preview.png" alt="Grid-Based-Farming Game with planted crops and workers on a grid" width="900" height="520" loading="lazy">
+            </summary>
+            <p class="farm-demo-note" id="farm-controls">Click the game or Tab to its canvas to focus. Use the buttons or keyboard; F1 opens help and F2 opens sound settings. Tab moves out of the game to Close game. The game needs a 360-pixel-wide view; on narrow screens, scroll inside the player or open a separate tab. Browser progress lasts for this session only. Closing the player or refreshing resets the farm.</p>
+            <p><a class="project-link" href="demos/grid-based-farming-game/grid_farm.html" target="_blank" rel="noopener noreferrer">Open game in a separate tab <span aria-hidden="true">&#8599;</span></a></p>
+            <div class="farm-demo-viewport"></div>
+            <template id="farm-frame-template">
+              <iframe data-src="demos/grid-based-farming-game/grid_farm.html" title="Grid-Based-Farming Game playable browser demo" aria-describedby="farm-controls" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </template>
+            <button class="farm-close" type="button" hidden>Close game and reset session</button>
+            <noscript><p>JavaScript is needed to play. Enable it and use the separate-tab link above.</p></noscript>
+          </details>
+        </article>
+        </section>
+
+        <section class="project-group" id="university-projects" aria-labelledby="university-projects-title">
+          <div class="project-group-head">
+            <h3 id="university-projects-title">University Projects</h3>
+            <p>My coursework gives me a foundation in algorithms, systems and collaborative development.</p>
+          </div>
+          <article class="project project-university twelve-grid" aria-labelledby="p4-title">
+            <div class="project-index">04 <span>/ SYSTEMS</span></div>
+            <div class="project-story">
+              ${mergesort_title}
+              ${mergesort_summary}
+              ${mergesort_contribution}
+              ${mergesort_background}
+              ${mergesort_status}
+              ${mergesort_technologies}
+              ${mergesort_evidence}
+            </div>
+          </article>
+        </section>
