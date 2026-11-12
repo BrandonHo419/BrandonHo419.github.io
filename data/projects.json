@@ -5,7 +5,7 @@
       "Savvit"
     ],
     "subtitle": "/ Visual bookmarking",
-    "summary": "I am independently extending Savvit into a visual bookmarking workspace for images, ideas and useful links. I organise content into private, public and selectively shared boards, with discovery of public boards and boards shared with my account after sign-in.",
+    "summary": "I am independently extending Savvit into a visual bookmarking workspace for images, ideas and useful links. The full application supports private, public and selectively shared boards with signed-in discovery. I have also built a standalone browser demo that anyone can explore without an account.",
     "contribution_label": "My redevelopment",
     "contribution": "I have extended pin uploads, metadata editing, search, saved references and moving owned originals between boards, alongside likes and threaded discussions. I have also added light, dark and system themes, saved appearance preferences, labelled forms and keyboard dialog focus management.",
     "technologies": [
@@ -19,10 +19,15 @@
         "label": "Source code",
         "url": "https://github.com/BrandonHo419/Savvit-Web-Based-Development",
         "accessible_label": "View Savvit source code on GitHub"
+      },
+      {
+        "label": "Try demo",
+        "url": "https://brandonho419.github.io/Savvit-Web-Based-Development/",
+        "accessible_label": "Try the Savvit interactive demo with browser-local saves"
       }
     ],
     "background": "I started from our collaborative university web application, where I worked on authentication, MySQL-backed functionality and module testing. The original team work remains credited in the repository history.",
-    "status": "Portfolio development: I have not deployed a public demo or completed end-to-end verification against real MySQL."
+    "status": "My interactive demo supports sample boards, pin creation, search, likes, comments and saved references. Changes stay in your browser; Reset demo restores the samples. It does not use real accounts, shared permissions or MySQL. End-to-end verification of the full app against real MySQL remains outstanding."
   },
   "search": {
     "name": "Mini Search Engine",

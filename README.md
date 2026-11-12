@@ -4,7 +4,8 @@ I am preparing my portfolio in this repository for the domain root at
 https://brandonho419.github.io/. I use `../portfolio-preview` as the design and
 content baseline, preserving its paper, charcoal and orange visual direction.
 This checkout is release preparation; I have not enabled publishing here.
-I am keeping `noindex,nofollow` until I make a separate indexing decision.
+I now allow search indexing with `index,follow` for launch. Search engines decide
+when to crawl and index the published page.
 
 ## My project selection
 
@@ -43,7 +44,7 @@ demo requires JavaScript and WebGL.
 - `index.html`: the static page, including the generated project block.
 - `tests/test_render_projects.py`: the generator's regression tests.
 - `styles.css` and `script.js`: presentation, footer year and on-demand game loading.
-- `assets/`: my Savvit fixture capture, existing search recording/poster, farming
+- `assets/`: my live Savvit demo capture, earlier fixture capture, search recording/poster, farming
   screenshot and static `portfolio-social.png` sharing graphic.
 - `demos/grid-based-farming-game/`: the compiled game and third-party notices.
 
@@ -80,7 +81,12 @@ newer than my checkouts. These are the sources behind the descriptions:
 
 Savvit's original academic work remains collaborative. My independent extension
 covers ownership-aware sharing, pin workflows, themes and keyboard accessibility.
-Public/shared discovery requires sign-in. The local Savvit report describes
+Public/shared discovery in the full application requires sign-in. My standalone
+[interactive demo](https://brandonho419.github.io/Savvit-Web-Based-Development/)
+needs no account and saves changes in browser storage. It demonstrates board/pin
+creation, search, likes, comments, saved references, removal/undo and reset; it
+does not provide real users, shared permissions or a MySQL connection.
+The local Savvit report describes
 fixture-backed browser checks and database-substitute tests; its real-MySQL
 attempt was blocked by database permissions. I do not turn those results into a
 production deployment, real-MySQL success or full accessibility-conformance claim.
@@ -122,15 +128,14 @@ upstream licence-bearing files when refreshing the build.
 
 ## Savvit media and capture list
 
-I captured `assets/savvit-collections-fixture.png` from the current local Savvit
-UI with its existing `scripts/browser-ui.cjs --screenshots` runner on 12 November
-2026. It is an unmodified 1440 x 900 screenshot of `home.html` with the runner's
-two sample boards. The caption explicitly identifies fixture data and unverified
-database persistence. The runner's eleven-page layout and keyboard/theme checks
-passed at 1440, 768 and 320 pixels. I did not run real-MySQL integration tests.
+I captured `assets/savvit-demo.png` from the published standalone demo at
+1440 x 1000 after restoring its sample boards. The illustrations are part of the
+actual demo UI. I retain the earlier full-app fixture capture in
+`assets/savvit-collections-fixture.png`, but the portfolio now shows the live demo.
+Its caption distinguishes browser-local storage from MySQL persistence.
 
-I still need the following media to show the full workflow. Item 1 below is
-partially covered by the fixture capture; I will refresh it after verification:
+I still want the following full-application captures to complement the standalone
+demo. They remain a follow-up after real-MySQL verification:
 
 1. **Collections, 1440 x 900:** a signed-in account with several sample boards,
    visible board search/sort and Create Board, using light theme.
@@ -162,7 +167,8 @@ reduced-motion behaviour and local paths from the domain root.
 
 I keep Python caches ignored and test source eligible for my manual commit.
 I make no dependency, metadata automation or deployment-workflow additions.
-I will commit manually and decide separately when to publish and change indexing.
+I will commit manually and decide separately when to publish. Search indexing is
+now enabled in the source for launch.
 
 
 ### Verification on 12 November 2026
@@ -206,11 +212,11 @@ I leave files unstaged for my manual commits.
 
 I found no blocking defect in the static portfolio checks above. Publication
 still awaits my manual commit/push and hosting decision; social-image fetching
-at the final URL can only be checked after publication. I deliberately retain
-`noindex,nofollow` until I decide to change it.
+at the final URL can only be checked after publication. The launch version now
+uses `index,follow`, superseding the earlier staging directive.
 
-Savvit's live deployment and real-MySQL verification remain outstanding, so I
-publish it as a development project with a fixture-labelled screenshot. The
+Savvit's standalone browser demo is live and linked. The full application's
+production deployment and real-MySQL verification remain outstanding. The
 capture list above records the remaining demonstration media. Those limitations
 do not prevent the static portfolio from linking to its source honestly.
 
@@ -220,3 +226,26 @@ to a textual interface; the project description and source links remain availabl
 without opening it. I do not claim full accessibility conformance or rerun the
 source projects' native/database suites as part of this portfolio review.
 
+
+
+### Savvit demo and search visibility update
+
+I checked local Savvit commit `8fa5368` and confirmed that the published demo's
+HTML, CSS and both JavaScript files match the local `docs/` source. I tested the
+live demo in a fresh Chrome profile at 1440, 768 and 320 pixels, including search,
+board/pin creation, likes, comments, saved references, removal/undo, persistence
+across reload, Escape focus return and reset. No real accounts or database data
+were involved. The full fixture runner could not start because port 3000 was
+already in use; I left that existing service running and checked the live demo
+directly instead. I did not run MySQL integration tests.
+
+I added the confirmed demo link and an actual screenshot, retained the original
+collaborative attribution, and replaced the portfolio's staging robots directive
+with `index,follow`. The earlier verification record above describes the staging
+state; this update records the launch decision. No hosting settings, commits or
+pushes were made as part of this update.
+
+The updated portfolio also passed reflow checks at 1440, 768 and 320 pixels,
+the generator check, all eight unit tests and `git diff --check`. I scoped the
+optional-demo regression test to its intended project so multiple demo links
+can coexist. Suggested commit: `feat: link Savvit demo and enable search indexing`.

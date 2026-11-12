@@ -39,13 +39,14 @@ class ProjectRenderingTests(unittest.TestCase):
             "accessible_label": "View source code",
         }]
         before = renderer.render_projects(self.data, self.template)
-        self.assertNotIn("Try demo", before)
+        # Another project can have a demo; only this project's link is absent.
+        self.assertNotIn('aria-label="Try the search demo"', before)
         self.data["search"]["evidence"].append({
             "label": "Try demo", "url": "https://example.com/demo?a=1&b=2",
             "accessible_label": "Try the search demo",
         })
         after = renderer.render_projects(self.data, self.template)
-        self.assertIn("Try demo", after)
+        self.assertIn('aria-label="Try the search demo"', after)
         self.assertIn("demo?a=1&amp;b=2", after)
 
     def test_invalid_urls_are_rejected(self):
