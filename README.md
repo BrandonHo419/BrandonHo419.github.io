@@ -1,11 +1,8 @@
 # My portfolio
 
 I am preparing my portfolio in this repository for the domain root at
-https://brandonho419.github.io/. I use `../portfolio-preview` as the design and
-content baseline, preserving its paper, charcoal and orange visual direction.
-This checkout is release preparation; I have not enabled publishing here.
-I now allow search indexing with `index,follow` for launch. Search engines decide
-when to crawl and index the published page.
+https://brandonho419.github.io/. 
+I now allow search indexing with `index,follow` for launch. 
 
 ## My project selection
 
